@@ -9,10 +9,10 @@ app.use(cors());
 app.use(express.json());
 
 const connection = mysql.createConnection({
-  host: 'localhost', // Replace with your host
-  user: 'newuser', // Replace with your database username
-  password: 'India@12345678', // Replace with your database password
-  database: 'ges' // Replace with your database name
+  host: 'mysql-2c6edfcb-manishkhot-bigcomapp.c.aivencloud.com', // Replace with your host
+  user: 'avnadmin', // Replace with your database username
+  password: 'AVNS_fi9VTm013OnTVwg1wXQ', // Replace with your database password
+  database: 'defaultdb' // Replace with your database name
 });
 
 connection.connect((err) => {
