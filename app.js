@@ -191,6 +191,9 @@ app.post('/switch/cart', (req, res) => {
   });
   });
   });
-  app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+  app.listen(port, (error) => {
+    if(!error)
+      console.log(`Server is running on http://localhost:${port}`);
+    else
+      console.log("Ran into error", error);
   });
