@@ -183,8 +183,8 @@ app.post('/switch/cart', (req, res) => {
   .then(function (response) {    
      var cartUrl = response.data['data']['cart_url']; 
      let originalString = cartUrl;
-    let localCartUrl = originalString.replace("https://demo-bigcommerce-q1.mybigcommerce.com", "http://localhost:3001");
-     res.status(200).send(localCartUrl);
+    //let localCartUrl = originalString.replace("https://demo-bigcommerce-q1.mybigcommerce.com", "http://localhost:3001");
+     res.status(200).send(cartUrl);
   })
   .catch(function (error) {
    console.log(error);
